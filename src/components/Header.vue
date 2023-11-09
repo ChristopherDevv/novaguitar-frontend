@@ -50,8 +50,8 @@ import { RouterLink, RouterView, useRouter } from "vue-router";
                 <img class="w-[40%] md:w-[25%] lg:w-[44%] transform lg:rotate-[20deg] inline lg:mt-[-60px]" src="/img/guitar_02.png" alt="image guitar">
                 <div class="z-10 absolute top-0 w-20 h-20 rounded-full shadow-md bg-gradient-to-tr from-slate-800 to-slate-500 flex justify-center transform -translate-x-[70%] md:-translate-x-[60%] left-[55%]">
                     <div class="flex items-center justify-center flex-col">
-                        <p class="font-thin text-xs md:text-sm text-white">From</p>
-                        <p class="text-white font-bold text-sm md:text-base">$399.00</p>
+                        <p class="font-thin text-xs md:text-xs text-white">From</p>
+                        <p class="text-white font-bold text-sm md:text-sm">$399.00</p>
                     </div>
                 </div>
                 <img class="w-[42%] md:w-[25%] lg:w-[44%] transform lg:rotate-[15deg] inline lg:mt-[-30px]" src="/img/guitar_12.png" alt="image guitar">
