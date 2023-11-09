@@ -3,6 +3,8 @@ import { Avatar } from 'flowbite-vue'
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 import OfertButton from './OfertButton.vue';
+import { ref, onMounted, onUnmounted } from 'vue';
+
 
 export default {
   name: 'App',
@@ -15,6 +17,23 @@ export default {
     Slide,
     Pagination,
     Navigation,
+  }, setup(){
+    const autoplay = ref(false);
+
+    const updateAutoplay = () => {
+        autoplay.value = window.innerWidth > 768;
+    };
+
+    onMounted(() => {
+        window.addEventListener('resize', updateAutoplay);
+        updateAutoplay();
+    });
+
+    onUnmounted(() => {
+        window.removeEventListener('resize', updateAutoplay);
+    });
+
+    return { autoplay };
   },
   data() {
     return {
@@ -51,7 +70,7 @@ export default {
                 </div>
 
                 <div class=" md:w-3/4 min-h-[100px] ">
-                    <Carousel :autoplay="2000" :transition="1500" ref="carousel" :items-to-show="1" :breakpoints="breakpoints" :wrap-around="true">
+                    <Carousel  :autoplay="autoplay ? 2000 : false" :transition="1500" ref="carousel" :items-to-show="1" :breakpoints="breakpoints" :wrap-around="true">
                         <slide v-for="product in products" :key="product.id" class="my-slide">
                             <div class="card p-5 rounded-lg bg-slate-50 text-gray-600">
                                 <div class="flex items-center gap-5">

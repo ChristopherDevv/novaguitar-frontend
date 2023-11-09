@@ -53,7 +53,7 @@ import { ref, computed } from "vue";
                         <img class="w-full h-full object-cover object-center" alt="blog image" src="/img/image-blog3.jpg">
                     </div>
                     <div class="w-2/3 text-xs text-gray-700">
-                        <h4 class="font-semibold">The best guitar solos by Gustavo Cerati</h4>
+                        <h4 class="font-semibold">The best guitar solos with Fender Stratocaster guitar</h4>
                         <p class="mt-2">September 25, 2023</p>
                     </div>
 
@@ -63,7 +63,7 @@ import { ref, computed } from "vue";
                         <img class="w-full h-full object-cover object-top" alt="blog image" src="/img/image-blog4.jpg">
                     </div>
                     <div class="w-2/3 text-xs text-gray-700">
-                        <h4 class="font-semibold">Possible reunion of heroes del silencio</h4>
+                        <h4 class="font-semibold">Gibson Les Paul Guitar</h4>
                         <p class="mt-2">October 10, 2023</p>
                     </div>
 
