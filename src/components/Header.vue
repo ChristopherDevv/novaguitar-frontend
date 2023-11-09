@@ -9,7 +9,7 @@ import { RouterLink, RouterView, useRouter } from "vue-router";
         <div class="bg-gradient"></div>
     <!-- imagne background -->
     <div class="absolute bottom-[-90px] hidden  md:left-[40%] lg:left-[62%] transform md:-translate-x-[40%] lg:-translate-x-[60%] md:flex md:items-end">
-        <img class="w-[450px] h-auto grayscale opacity-[0.02]" src="img/shape-1.png" alt="image shape">
+        <img class="w-[450px] h-auto grayscale opacity-[0.02]" src="/img/shape-1.png" alt="image shape">
         <img class="w-96 h-auto grayscale opacity-[0.01]" src="/img/shape-2.png" alt="image shape">
     </div>
      <!-- header content -->
