@@ -1,0 +1,32 @@
+{
+  "name": "novaguitar-front",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.16",
+    "aos": "^2.3.4",
+    "axios": "^1.5.0",
+    "flowbite": "^1.8.1",
+    "flowbite-vue": "^0.0.17-next.2",
+    "pinia": "^2.1.6",
+    "tw-elements": "^1.0.0-rc.1",
+    "vee-validate": "^4.11.6",
+    "vue": "^3.3.4",
+    "vue-multiselect": "^2.1.7",
+    "vue-next-select": "^2.10.5",
+    "vue-router": "^4.2.4",
+    "vue3-carousel": "^0.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.9"
+  }
+}
