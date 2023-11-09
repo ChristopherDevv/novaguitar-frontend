@@ -14,9 +14,8 @@ export const useGuitarStore = defineStore('guitar', () => {
     const router = useRouter();
     onMounted(() => {
         accesToken.value = auth.isAuth.access_token;
-        console.log(accesToken.value)
-        console.log('hello')
-        console.log(auth.isAuth)
+        const access = accesToken.value;
+        const thisAuth = auth.isAuth;
     })
 
 
