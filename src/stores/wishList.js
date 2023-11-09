@@ -8,7 +8,7 @@ export  const wishListStore = defineStore('wish', () => {
 
     onMounted(() => {
         const wishStorage = localStorage.getItem('wishList');
-        if(wishListStore){
+        if(wishStorage){
             wishes.value = JSON.parse(wishStorage);
         }
     })
