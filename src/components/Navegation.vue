@@ -19,6 +19,12 @@ const router = useRouter();
 const wish = wishListStore();
 const cart = cartStore();
 
+console.log(wish.wishes)
+console.log(wish.wishes.length)
+console.log('hello')
+console.log(cart.cart)
+console.log(cart.cart.length)
+
 const auth = useAuthStore();
 const isOpen = ref(false);
 const itemsOpen = ref(false);
