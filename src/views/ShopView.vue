@@ -148,7 +148,7 @@ const seeAll = () => {
 
         <div v-if="guitarsFilter.length <= 0 && guitars.length > 0" class="my-28 w-full flex-col gap-2 text-center flex items-center justify-center">
             <h3 class="text-4xl font-bold">OPPS!</h3>
-            <p>Guiatr noot fount</p>
+            <p>Guitar not found</p>
         </div>
     </div>
     <Alert :alertType="'success'" v-if="wish.hasSuccess">
