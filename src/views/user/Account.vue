@@ -185,7 +185,7 @@ const userDelete = () => {
                             </div>
                             <div v-else>
                                 <div class="flex items-center gap-5">
-                                    <p class="text-red-400 text-sm">All items in yuor cart will be removed</p>
+                                    <p class="text-red-400 text-sm">All items in your cart will be removed</p>
                                     <spinner v-if="auth.showSpinner" color="blue" size="6" />
                                 </div>
                                 <div class="w-full md:w-1/2 mt-8 mb-5 mx-auto text-center flex flex-col items-center justify-center text-red-500 rounded-lg bg-red-50 min-h-[200px]">
