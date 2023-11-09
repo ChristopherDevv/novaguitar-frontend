@@ -59,7 +59,7 @@ const addAndClose = () => {
                     Contact
                 </RouterLink>
             </div>
-<!-- 
+
             <div class="text-gray-400 flex items-center gap-1 md:gap-3">
                 <button @click="itemsOpen = !itemsOpen" class="focus:outline-none">
                   <div class="hover:bg-[#FE497B] hover:text-white duration-500 relative transition-colors p-2 rounded-full flex items-center justify-center">
@@ -79,7 +79,7 @@ const addAndClose = () => {
                       </div>
                   </div>
                 </RouterLink>
-                
+             <!--    
                 <Menu as="div" class="relative inline-block">
                   <div>
                     <MenuButton>
@@ -166,7 +166,7 @@ const addAndClose = () => {
                       
                     </MenuItems>
                   </transition>
-                </Menu>
+                </Menu> -->
 
                 <div class="flex items-center justify-center md:hidden ml-1">
                     <button @click="isOpen = !isOpen" class="focus:outline-none">
@@ -187,7 +187,7 @@ const addAndClose = () => {
                     </button>
                 </div>
             </div>
-             -->
+            
         </div>
     </div>
 
