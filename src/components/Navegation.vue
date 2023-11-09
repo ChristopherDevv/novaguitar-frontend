@@ -16,14 +16,14 @@ const { formatPrice } = usePriceFormat()
 
 const router = useRouter();
 
-const wish = wishListStore();
+/* const wish = wishListStore(); */
 const cart = cartStore();
 
 const auth = useAuthStore();
 const isOpen = ref(false);
 const itemsOpen = ref(false);
 
-const addAndClose = () => {
+/* const addAndClose = () => {
   if(auth.isAuth){
     cart.addWishtoCart();
   }else{
@@ -32,7 +32,7 @@ const addAndClose = () => {
 
   itemsOpen.value = false;
   
-}
+} */
 
 </script>
 
@@ -59,7 +59,7 @@ const addAndClose = () => {
                     Contact
                 </RouterLink>
             </div>
-
+<!-- 
             <div class="text-gray-400 flex items-center gap-1 md:gap-3">
                 <button @click="itemsOpen = !itemsOpen" class="focus:outline-none">
                   <div class="hover:bg-[#FE497B] hover:text-white duration-500 relative transition-colors p-2 rounded-full flex items-center justify-center">
@@ -187,6 +187,7 @@ const addAndClose = () => {
                     </button>
                 </div>
             </div>
+             -->
         </div>
     </div>
 
