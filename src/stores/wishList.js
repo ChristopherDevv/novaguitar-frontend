@@ -7,12 +7,14 @@ export  const wishListStore = defineStore('wish', () => {
     const successMsg = ref('');
 
     onMounted(() => {
-        const wishStorage = localStorage.getItem('wishList');
+      /*   const wishStorage = localStorage.getItem('wishList');
         if(wishStorage){
             wishes.value = JSON.parse(wishStorage);
-            console.log('there is')
-            console.log(wishes.value)
-        }
+           
+        } */
+        let wishStorage = JSON.parse(localStorage.getItem('wishList')) || [];
+        wishes.value = wishStorage;
+       /*  console.log(wishStorage) */
     })
 
     watch(wishes, () => {

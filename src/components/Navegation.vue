@@ -267,8 +267,7 @@ const addAndClose = () => {
           <div class="h-full flex flex-col gap-4 pt-3">
             <div class="font-bold text-lg flex items-center justify-between">
                 <p>Subtotal</p>
-                <!-- <p>{{ formatPrice(wish.subTotal) }}</p> -->
-                <p>00.00</p>
+                <p>{{ formatPrice(wish.subTotal) }}</p>
             </div>
             <div class="flex items-center justify-between gap-5">
               <div class="flex-1">
