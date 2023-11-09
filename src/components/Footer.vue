@@ -6,7 +6,7 @@ import { RouterLink, RouterView, useRouter } from "vue-router";
 <template>
     <div class="px-4 md:px-4 lg:px-0 mx-auto md:max-w-4xl lg:max-w-5xl xl:max-w-[1130px] w-full text-gray-300 relative overflow-hidden">
         <div data-aos="fade-up" data-aos-duration="800">
-            <div class="bg-gradient-footer md:right-[180px]"></div>
+            <div class="bg-gradient-footer right-[-230px] md:right-[180px]"></div>
             <div class="bg-slate-50 text-gray-600 rounded-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-3 p-5">
                 <div class="flex items-center justify-center lg:justify-start gap-5">
                     <img class="w-11" src="../../public/img/service1.png" alt="">
