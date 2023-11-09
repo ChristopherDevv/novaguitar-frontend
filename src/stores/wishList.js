@@ -10,6 +10,8 @@ export  const wishListStore = defineStore('wish', () => {
         const wishStorage = localStorage.getItem('wishList');
         if(wishStorage){
             wishes.value = JSON.parse(wishStorage);
+            console.log('there is')
+            console.log(wishes.value)
         }
     })
 

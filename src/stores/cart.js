@@ -12,7 +12,7 @@ export const cartStore = defineStore('cart', () => {
     const successMsg = ref('');
 
     onMounted(() => {
-        wishes.value = wish.wishes;
+        wishes.value = wish.listWishes;
         const cartStorage = localStorage.getItem('cart');
         if(cartStorage){
             /* utilizamos Array.prototype.push.apply para asegurarnos de que cada item del carrito se añade individualmente al array cart.value. */
