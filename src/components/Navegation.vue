@@ -19,12 +19,6 @@ const router = useRouter();
 const wish = wishListStore();
 const cart = cartStore();
 
-console.log(wish.wishes)
-console.log(wish.wishes.length)
-console.log('hello')
-console.log(cart.cart)
-console.log(cart.cart.length)
-
 const auth = useAuthStore();
 const isOpen = ref(false);
 const itemsOpen = ref(false);
@@ -67,14 +61,14 @@ const addAndClose = () => {
             </div>
 
             <div class="text-gray-400 flex items-center gap-1 md:gap-3">
-               <!--  <button @click="itemsOpen = !itemsOpen" class="focus:outline-none">
+                <button @click="itemsOpen = !itemsOpen" class="focus:outline-none">
                   <div class="hover:bg-[#FE497B] hover:text-white duration-500 relative transition-colors p-2 rounded-full flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-6" viewBox="0 0 24 24"><path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"></path></svg>
-                      <div v-if="wish.wishes.length > 0" class="p-[3px] bg-green-400 h-[18px] w-[18px] font-bold rounded-full text-white absolute top-[-1px]  right-[-1px] flex items-center justify-center">
+                      <!-- <div v-if="wish.wishes.length > 0" class="p-[3px] bg-green-400 h-[18px] w-[18px] font-bold rounded-full text-white absolute top-[-1px]  right-[-1px] flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5" viewBox="0 0 24 24"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg>  
-                      </div>
+                      </div> -->
                   </div>
-                </button> -->
+                </button>
                 <RouterLink :to="{name: 'user-cart'}">
                   <div class="hover:bg-[#FE497B] relative hover:text-white duration-500 transition-colors p-2 rounded-full flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-6" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
