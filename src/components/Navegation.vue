@@ -16,14 +16,14 @@ const { formatPrice } = usePriceFormat()
 
 const router = useRouter();
 
-/* const wish = wishListStore(); */
+const wish = wishListStore();
 const cart = cartStore();
 
 const auth = useAuthStore();
 const isOpen = ref(false);
 const itemsOpen = ref(false);
 
-/* const addAndClose = () => {
+const addAndClose = () => {
   if(auth.isAuth){
     cart.addWishtoCart();
   }else{
@@ -32,7 +32,7 @@ const itemsOpen = ref(false);
 
   itemsOpen.value = false;
   
-} */
+}
 
 </script>
 
