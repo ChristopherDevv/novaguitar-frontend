@@ -2,9 +2,11 @@
 import { Rating, StackedAvatars, Avatar, StackedAvatarsCounter } from 'flowbite-vue'
 import PrimaryButton from './PrimaryButton.vue';
 import { RouterLink, RouterView, useRouter } from "vue-router";
+import NavegationVue from '../components/Navegation.vue';
 </script>
 
 <template>
+     <NavegationVue></NavegationVue>
     <header class="min-h-screen bg-gradient-to-br from-slate-800 to-slate-950 relative overflow-hidden pb-20">
         <div class="bg-gradient"></div>
     <!-- imagne background -->
