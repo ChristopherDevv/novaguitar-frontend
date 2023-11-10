@@ -34,6 +34,7 @@ const addItem = handleSubmit((values) => {
 let categoryOptions = ['Stratocaster guitar', 'Les Paul guitar', 'Telecaster guitar'];
 let colorOptions = ['indigo', 'blue', 'cyan', 'orange', 'red', 'gray'];
 
+//image base 68
 let file = ref(null);
 const handleFileUpload = (event) => {
   file.value = event.target.files[0];
