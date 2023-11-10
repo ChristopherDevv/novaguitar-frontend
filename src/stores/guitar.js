@@ -8,15 +8,13 @@ export const useGuitarStore = defineStore('guitar', () => {
 
     const errorMsg = ref('');
     const auth = useAuthStore();
-    const accesToken = ref('');
+    const accesToken = computed(() => auth.isAuth.access_token);
     const successMsg = ref('');
     const spinner = ref(false);
     const router = useRouter();
-    onMounted(() => {
+    /* onMounted(() => {
         accesToken.value = auth.isAuth.access_token;
-        const access = accesToken.value;
-        const thisAuth = auth.isAuth;
-    })
+    }) */
 
 
     const createGuitar = async ({name, fullName, category, color, description, specifications, care_maintenance, price, rating, discount, stock, image_url}) => {
@@ -78,6 +76,7 @@ export const useGuitarStore = defineStore('guitar', () => {
     }
 
     const indexGuitar = async() => {
+        spinner.value = true;
         try {
             const response = await axios.get('https://oyster-app-ww52a.ondigitalocean.app/api/guitars');
             /* console.log(response); */
@@ -88,6 +87,8 @@ export const useGuitarStore = defineStore('guitar', () => {
             }
         } catch (error) {
             console.log(error)
+        }finally {
+            spinner.value = false;
         }
     }
 
