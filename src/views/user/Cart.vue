@@ -79,7 +79,7 @@ const payGuitar = handleSubmit((values) => {
                     <p class="text-red-500 text-sm font-medium mt-1">{{ phone.errorMessage.value }}</p>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 min-h-[200px] bg-gradient-to-tr from-gray-950 to-gray-900 px-4 py-7 md:p-7 rounded-lg">
+            <div class="w-full lg:w-1/2 min-h-[200px] bg-slate-800 shadow-2xl shadow-neutral-950 px-4 py-7 md:p-7 rounded-lg">
                 <div class="bg-white min-h-[200px] rounded w-full p-5 text-gray-600">
                     <div class="w-full hidden md:block">
                         <table class="table-auto w-full text-left whitespace-no-wrap hidden md:table">
