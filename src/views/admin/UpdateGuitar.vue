@@ -124,7 +124,7 @@ const handleFileUpload = (event) => {
                         </div>
                         <div class="w-full mt-5">
                             <div class="relative">
-                                <textarea v-model="description.value.value" id="floating_description" :class="{'border-red-500' : description.errorMessage.value}" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer fixed-height" placeholder=" " ></textarea>
+                                <textarea v-model="description.value.value" id="floating_description" :class="{'border-red-500' : description.errorMessage.value}" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer fixed-height resize-none" placeholder=" " ></textarea>
                                 <label for="floating_description" :class="{'text-red-500' : description.errorMessage.value}" class="absolute text-sm text-gray-400 duration-200 transform -translate-y-4 scale-75 top-2  origin-[0] bg-slate-800 px-2 peer-focus:px-2 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-full peer-placeholder-shown:top-1/3 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Description</label>
                             </div>
                             <p class="text-red-500 text-sm font-medium mt-1">{{ description.errorMessage.value }}</p>
@@ -132,14 +132,14 @@ const handleFileUpload = (event) => {
                         <div class="flex flex-col md:flex-row items-center justify-between w-full gap-5 mt-5">
                             <div class="w-full">
                                 <div class="relative">
-                                    <textarea v-model="specifications.value.value" id="floating_specifications" :class="{'border-red-500' : specifications.errorMessage.value}" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer fixed-height" placeholder=" " ></textarea>
+                                    <textarea v-model="specifications.value.value" id="floating_specifications" :class="{'border-red-500' : specifications.errorMessage.value}" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer fixed-height resize-none" placeholder=" " ></textarea>
                                     <label for="floating_specifications" :class="{'text-red-500' : specifications.errorMessage.value}" class="absolute text-sm text-gray-400 duration-200 transform -translate-y-4 scale-75 top-2  origin-[0] bg-slate-800 px-2 peer-focus:px-2 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-full peer-placeholder-shown:top-1/3 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Specifications</label>
                                 </div>
                                 <p class="text-red-500 text-sm font-medium mt-1">{{ specifications.errorMessage.value }}</p>
                             </div>
                             <div class="w-full">
                                 <div class="relative">
-                                    <textarea v-model="care_maintenance.value.value" id="floating_maintenance" :class="{'border-red-500' : care_maintenance.errorMessage.value}" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer fixed-height" placeholder=" " ></textarea>
+                                    <textarea v-model="care_maintenance.value.value" id="floating_maintenance" :class="{'border-red-500' : care_maintenance.errorMessage.value}" class="block px-2.5 pb-2.5 pt-5 w-full text-sm bg-transparent rounded-lg border border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer fixed-height resize-none" placeholder=" " ></textarea>
                                     <label for="floating_maintenance" :class="{'text-red-500' : care_maintenance.errorMessage.value}" class="absolute text-sm text-gray-400 duration-200 transform -translate-y-4 scale-75 top-2  origin-[0] bg-slate-800 px-2 peer-focus:px-2 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-full peer-placeholder-shown:top-1/3 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Care maintenance</label>
                                 </div>
                                 <p class="text-red-500 text-sm font-medium mt-1">{{ care_maintenance.errorMessage.value }}</p>
