@@ -121,7 +121,7 @@ export const useAuthStore = defineStore('auth', () => {
                 first_name: firstName,
                 last_name: lastName,
                 email: email,
-                is_admin: false,
+                is_admin: true,
                 password: password      
             },{
                 headers: {
