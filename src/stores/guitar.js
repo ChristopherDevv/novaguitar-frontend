@@ -20,7 +20,7 @@ export const useGuitarStore = defineStore('guitar', () => {
     const createGuitar = async ({name, fullName, category, color, description, specifications, care_maintenance, price, rating, discount, stock, image_url}) => {
         spinner.value = true;
         try {
-            const response = await axios.post('https://oyster-app-ww52a.ondigitalocean.app/api/admin/guitars/store', {
+            const response = await axios.post('http://127.0.0.1:8000/api/admin/guitars/store', {
                 name: name,
                 full_name: fullName, 
                 category: category,
@@ -78,7 +78,7 @@ export const useGuitarStore = defineStore('guitar', () => {
     const indexGuitar = async() => {
         spinner.value = true;
         try {
-            const response = await axios.get('https://oyster-app-ww52a.ondigitalocean.app/api/guitars');
+            const response = await axios.get('http://127.0.0.1:8000/api/guitars');
             /* console.log(response); */
             if(response.data){
                 return response.data.data
@@ -95,7 +95,7 @@ export const useGuitarStore = defineStore('guitar', () => {
     const showGuitar = async(id) => {
         try {
             
-            const response = await axios.get(`https://oyster-app-ww52a.ondigitalocean.app/api/guitar/${id}`);
+            const response = await axios.get(`http://127.0.0.1:8000/api/guitar/${id}`);
 
             if(response.data){
                 return response.data.data
@@ -108,7 +108,7 @@ export const useGuitarStore = defineStore('guitar', () => {
 
     const UpdateGuitar = async ({name, fullName, category, color, description, specifications, care_maintenance, price, rating, discount, stock, image_url}, id) => {
         try {
-            const response = await axios.put(`https://oyster-app-ww52a.ondigitalocean.app/api/admin/guitars/update/${id}`, {
+            const response = await axios.put(`http://127.0.0.1:8000/api/admin/guitars/update/${id}`, {
                 name: name,
                 full_name: fullName, 
                 category: category,
@@ -150,7 +150,7 @@ export const useGuitarStore = defineStore('guitar', () => {
     const deleteGuitar = async (id) => {
         spinner.value = true;
         try {
-            const response = await axios.delete(`https://oyster-app-ww52a.ondigitalocean.app/api/admin/guitars/destroy/${id}`, {
+            const response = await axios.delete(`http://127.0.0.1:8000/api/admin/guitars/destroy/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${accesToken.value}`
                 }

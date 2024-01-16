@@ -23,7 +23,7 @@ export const useAuthStore = defineStore('auth', () => {
     const login = async ({email, password}) => {
         spinner.value = true;
        try {
-        const response = await axios.post('https://oyster-app-ww52a.ondigitalocean.app/api/user/login', {
+        const response = await axios.post('http://127.0.0.1:8000/api/user/login', {
             email: email,
             password: password
         });
@@ -57,7 +57,7 @@ export const useAuthStore = defineStore('auth', () => {
     const register = async ({firstName, lastName, email, password}) => {
         spinner.value = true;
         try {
-            const response = await axios.post('https://oyster-app-ww52a.ondigitalocean.app/api/user/register', {
+            const response = await axios.post('http://127.0.0.1:8000/api/user/register', {
                 first_name: firstName,
                 last_name: lastName,
                 email: email,
@@ -94,7 +94,7 @@ export const useAuthStore = defineStore('auth', () => {
     const logout = async () => {
         spinner.value = true; 
         try {
-            const response = axios.get('https://oyster-app-ww52a.ondigitalocean.app/api/user/logout', {
+            const response = axios.get('http://127.0.0.1:8000/api/user/logout', {
                 headers: {
                     'Authorization': `Bearer ${authUser.value.access_token}`
                 }
@@ -117,7 +117,7 @@ export const useAuthStore = defineStore('auth', () => {
     const userUpdate = async ({firstName, lastName, email, password}) => {
         spinner.value = true;    
         try {
-            const response = await axios.put(`https://oyster-app-ww52a.ondigitalocean.app/api/user/update/${authUser.value.user.id}`,{
+            const response = await axios.put(`http://127.0.0.1:8000/api/user/update/${authUser.value.user.id}`,{
                 first_name: firstName,
                 last_name: lastName,
                 email: email,
@@ -161,7 +161,7 @@ export const useAuthStore = defineStore('auth', () => {
     const userDelete = async () => {
         spinner.value = true; 
        try {
-        const response = await axios.delete(`https://oyster-app-ww52a.ondigitalocean.app/api/user/destroy/${authUser.value.user.id}`, {
+        const response = await axios.delete(`http://127.0.0.1:8000/api/user/destroy/${authUser.value.user.id}`, {
             headers: {
                 'Authorization': `Bearer ${authUser.value.access_token}`
             }
